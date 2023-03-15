@@ -1,0 +1,8 @@
+.analogClockHand {
+    border-radius: 48px;
+    background-color: var(--accentColorLigther);
+    box-shadow: 0 0 24px var(--primaryColorDarker);
+
+    position: absolute;
+    bottom: 18px;
+}

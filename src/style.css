@@ -1,0 +1,36 @@
+:root {
+  --primaryColor: #3a3a3a;
+  --primaryColorDarker: #313131;
+  --primaryColorLighter: #414141;
+  --primaryShadow: #282828;
+  --secondaryColor: #ffffff;
+  --accentColor: #33558f;
+  --accentColorDarker: #21385e;
+  --accentColorLigther: #6a8bc2;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+
+  color: var(--secondaryColor);
+  background-color: var(--primaryColor);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}

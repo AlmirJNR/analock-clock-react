@@ -1,0 +1,20 @@
+.analogClock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: transparent;
+    background-color: var(--primaryColorDarker);
+
+    width: 500px;
+    height: 500px;
+
+    z-index: 0;
+
+    box-shadow: 10px 10px 16px var(--primaryShadow),
+    inset 10px 10px 16px var(--primaryShadow)
+}

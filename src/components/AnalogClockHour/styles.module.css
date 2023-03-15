@@ -1,0 +1,32 @@
+.analogClockHour3,
+.analogClockHour6,
+.analogClockHour9,
+.analogClockHour12 {
+    margin: 18px;
+    position: absolute;
+}
+
+.analogClockHour3::after,
+.analogClockHour6::after,
+.analogClockHour9::after,
+.analogClockHour12::after {
+    color: var(--primaryColor);
+}
+
+.analogClockHour3::after {
+    content: '3';
+}
+
+.analogClockHour6::after {
+    content: '6';
+}
+
+.analogClockHour9::after {
+    content: '9';
+}
+
+.analogClockHour12::after {
+    content: '12';
+}
+
+
