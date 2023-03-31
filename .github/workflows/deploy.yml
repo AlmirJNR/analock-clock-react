@@ -17,6 +17,4 @@ jobs:
           node-version: '18.x'
       - run: npm ci
       - run: npm run build
-      - run: git config user.name "Almir Alves de Freitas Junior"
-      - run: git config user.email "almirafjr.dev@gmail.com"
       - run: npm run deploy
