@@ -3,23 +3,18 @@ name: deploy
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Build aplication with Vite
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18.x'
-    - run: npm ci
-    - run: npm run build
-
-    - name: Deploy to github pages
-      uses: peaceiris/actions-gh-pages@v3.9.2
-      with:
-        deploy_key: '{{ secrets.ACTIONS_DEPLOY_KEY }}'
-        publish_dir: './dist'
+      - name: Build aplication with Vite
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+      - run: npm ci
+      - run: npm run build
+      - run: npm run deploy
