@@ -10,13 +10,13 @@ type TAnalogClockProps = {
 
 export default function AnalogClock(props: TAnalogClockProps) {
 	const {seconds, minutes, hours} = useTimer(props.date);
-	
+
 	return (
 		<div className={styles.analogClock}>
-			<AnalogClockHour key={3} value={3} position={{right: '0'}}/>
-			<AnalogClockHour key={6} value={6} position={{bottom: '0'}}/>
-			<AnalogClockHour key={9} value={9} position={{left: '0'}}/>
-			<AnalogClockHour key={12} value={12} position={{top: '0'}}/>
+			<AnalogClockHour value={3} position={{right: '0'}}/>
+			<AnalogClockHour value={6} position={{bottom: '0'}}/>
+			<AnalogClockHour value={9} position={{left: '0'}}/>
+			<AnalogClockHour value={12} position={{top: '0'}}/>
 			<AnalogClockDial>
 				<AnalogClockHand time={seconds} height="180px" width="6px" rotationDegreesPerTime={6}/>
 				<AnalogClockHand time={minutes} height="120px" rotationDegreesPerTime={6}/>

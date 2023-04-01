@@ -18,3 +18,10 @@
     box-shadow: 10px 10px 16px var(--primaryShadow),
     inset 10px 10px 16px var(--primaryShadow)
 }
+
+@media (max-width: 550px) {
+    .analogClock {
+        width: 300px;
+        height: 300px;
+    }
+}
